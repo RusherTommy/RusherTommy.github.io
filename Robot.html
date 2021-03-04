@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewpart" content="width=device-width, initial-scale=1">
+        <title>Robottino</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+        <style>
+            html, body { margin: 0; padding: 0; background-color: "red"}
+            canvas { display: block; }
+        </style>
+
+        <script>
+
+        function setup()
+        {
+          createCanvas(1500, 800);
+        }
+        function draw()
+        {
+            background(220);
+            angleMode(DEGREES)
+            
+            //testa
+            fill(112,128,144);
+            rect(mouseX -25, mouseY -19,50,49);
+            
+            //occhi 
+            fill(255,255,255)
+            circle(mouseX - 10, mouseY - 10, 10);
+            circle(mouseX + 10, mouseY - 10, 10);
+            fill(0,255,0);
+            circle(mouseX - 10, mouseY - 10, 4);
+            circle(mouseX + 10, mouseY - 10, 4);
+            
+            //naso
+            fill(0);
+            square(mouseX - 2, mouseY, 5);
+            
+            //bocca
+            fill(229,43,80)
+            arc(mouseX , mouseY +15, 20,15,0,180);
+            
+            //antenne
+            fill(255,50,255);
+            line(mouseX - 20, mouseY - 20, mouseX - 20, mouseY - 40);
+            fill(255,90,255);
+            line(mouseX + 20, mouseY - 40, mouseX + 20, mouseY - 20);
+            fill(224,255,255);
+            circle(mouseX - 20, mouseY - 40, 10);
+            circle(mouseX + 20, mouseY - 40, 10);
+            
+            //collo
+            fill(47,79,79);
+            rect(mouseX - 8, mouseY + 30, 15, 20);
+            
+            //busto
+            fill(95,95,95);
+            rect(mouseX - 29, mouseY + 50, 60, 70);
+            
+            //braccia
+            fill(119,136,153);
+            rect(mouseX -84, mouseY + 50, 55, 20);
+            rect(mouseX + 31, mouseY + 50, 55, 20);
+            
+            //mani
+            fill(220,220,220)
+            rect(mouseX -94, mouseY + 50, 10, 20)
+            rect(mouseX + 86, mouseY + 50, 10, 20);
+            
+            //gamba
+            fill(119,136,153);
+            rect(mouseX - 29, mouseY + 120, 20, 30);
+            rect(mouseX + 11, mouseY + 120, 20, 30);
+            
+            //ruote
+            fill(0,0,0);
+            circle(mouseX - 20, mouseY + 163, 30)
+            circle(mouseX +22, mouseY + 163, 30)
+            fill(192,192,192)
+            circle(mouseX - 20, mouseY + 163, 16)
+            circle(mouseX +22, mouseY + 163, 16)
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Robot Iavarazzo</h1>
+    </body>
+<html>
