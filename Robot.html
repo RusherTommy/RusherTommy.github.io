@@ -9,10 +9,37 @@
             html, body { margin: 0; padding: 0}
             canvas { display: block; }
         </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/solar/bootstrap.css" integrity="sha256-NAnb2Js3DbGNWivctYxh5VCsOljsq1hTW4FSJal0LUw=" crossorigin="anonymous">
     </head>
     <body>
-        <a href="index.html"><h3>Torna al menù principale</h3></a>
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="squadra.html">Lazio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Orologio.html">Orologio</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="Robot.html">Robot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="soft_skills.html">Soft skills</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         <h1>Robot Iavarazzo</h1>
 
         <script>
@@ -86,5 +113,39 @@
                 circle(mouseX +22, mouseY + 163, 16)
             }
             </script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.js" integrity="sha256-U+mDCLgTk8IMb18+fQT+ucvP73uHTPaG2qZU9o7smtE=" crossorigin="anonymous"></script>
+            <script>
+                (function () {
+                  'use strict';
+      
+                  $(window).scroll(function () {
+                    var top = $(document).scrollTop();
+                    if (top > 50) {
+                      $('#home > .navbar').removeClass('navbar-transparent');
+                    } else {
+                      $('#home > .navbar').addClass('navbar-transparent');
+                    }
+                  })
+      
+                  $('a[href="#"]').click(function (event) {
+                    event.preventDefault();
+                  })
+      
+                  // $('.alert').alert()
+                  // $('.carousel').carousel();
+                  $('.bs-component [data-toggle="popover"]').popover();
+                  $('.bs-component [data-toggle="tooltip"]').tooltip();
+                  $('.bs-component [data-toggle="popover"]').popover();
+                  // $('.bs-component .modal-dialog').modal();
+      
+                })();
+            </script>
+            <style>
+                body{
+                  background-color: #88BDBC;
+                  color: black;
+                }
+              </style>
     </body>
 </html>

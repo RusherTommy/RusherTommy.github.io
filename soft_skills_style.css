@@ -3,7 +3,6 @@
 }
 body{
     font-family: 'Source Code Pro', monospace;
-    background-color: #88BDBC
 }
 main section{
     border: 1px solid black;
@@ -11,17 +10,12 @@ main section{
     color:#F8E9A1 ;
     font-size: 20px;
 }
-ul li{
-    margin: 5px;
-}
 *{
     box-sizing: border-box;
 }
-header a{
-    font-size: 30px;
-    display: inline;
+#colore{
+    background-color: #88BDBC
 }
-a{
-    position: absolute;
-    top: 2.5%;
+header h1,h3{
+    color: black;
 }
